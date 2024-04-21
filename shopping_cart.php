@@ -9,29 +9,48 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
 </head>
-<>
+<body>
+<div class="shopping-cart-1">
+ <!-- <div class="m-2">
+    <div class="card1">
+        <div class="card" style="width: 15rem;">
+            <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/391928/01/sv01/fnd/IND/fmt/png/RS-X-Triple-Unisex-Sneakers" class="card-img-top" alt="..."> 
+            <div class="d-flex flex-row container justify-content-between">
+                <h5 class="card-title">EQT Support</h5>
+                <p>$49</p>
+            </div>
+            <div class="d-flex flex-row container justify-content-between">
+                <button class="btn btn-dark mb-4 add-to-cart" data-name="EQT Support" data-price="49">Add to Cart</button>
+                <h5 id="discount">20% off</h5>
+            </div>
+        </div>
+    </div>
+</div> -->
 
 <div class="container">
     <div class="row">
         <div class="col-md-4">
             <h2>Shopping Cart</h2>
-            <ul class="list-group cart container  ">
-              <!-- Cart items will be inserted here -->
-          
-              <!--  -->
+            <ul class="list-group cart container">
+                <!-- Cart items will be inserted here -->
             </ul>
             <div class="text-center mt-3">
-              <button class="btn btn-danger clear-cart">Clear Cart</button>
+                <button class="btn btn-danger clear-cart">Clear Cart</button>
             </div>
             <div class="text-center mt-3">
-              <p>Total Items: <span id="total-items">0</span></p>
-              <p>Total Price: $<span id="total-price">0.00</span></p>
-              <button class="btn btn-success proceed-payment d-none" onclick="pay()">Proceed to Payment</button>
+                <p>Total Items: <span id="total-items">0</span></p>
+                <p>Total Price: $<span id="total-price">0.00</span></p>
+                <button class="btn btn-success proceed-payment d-none" onclick="pay()">Proceed to Payment</button>
             </div>
-          </div>
         </div>
+    </div>
 </div>
-<!-- ////////////////////////////////////////////////// -->
+
+</div><!--shopping card 1  -->
+
+
+   <!-- ////////////////////////////////////////////////////// -->
+  
 <script>
     function updateProceedPaymentButton() {
         var totalPrice = parseFloat($('#total-price').text());
@@ -52,6 +71,7 @@
             '<button class="btn btn-sm btn-outline-primary decrement">-</button>' +
             '</div>' +
             '<button class="btn btn-sm btn-outline-danger remove">Remove</button>' +
+            '$'+ price+
             '</li>';
 
         $('.cart').append(cartItem);
@@ -78,6 +98,7 @@
         // Add to cart button click event
         $('.add-to-cart').click(function() {
             var name = $(this).data('name');
+          
             var price = parseFloat($(this).data('price'));
             addItemToCart(name, price, 1);
         });
@@ -87,15 +108,22 @@
             $('.cart').empty();
             updateCartTotal();
             updateProceedPaymentButton();
-            // //////////////////////////////////////
-            var cart = $("#cart_ani");
+            // ///////////////////////////////////////////////////
+            var button = $(this);
+    var cart = $("#cart_ani");
     var cartTotal = cart.attr("data-totalitems");
-    
-    // Decrease the total items count
-    var newCartTotal = 0;
-    
-    cart.attr("data-totalitems", newCartTotal);
-            // /////////////////////////////////////
+    var newCartTotal = parseInt(cartTotal) *0;
+
+    button.addClass("sendtocart");
+    setTimeout(function () {
+      button.removeClass("sendtocart");
+      cart.addClass("shake").attr("data-totalitems", newCartTotal);
+      setTimeout(function () {
+        cart.removeClass("shake");
+      }, 200);
+    }, 500);
+            ////////////////////////////////////////////////////
+
         });
 
         // Increment quantity button click event
@@ -109,6 +137,7 @@
 
         // Decrement quantity button click event
         $(document).on('click', '.decrement', function() {
+           
             var $quantity = $(this).siblings('.quantity');
             var quantity = parseInt($quantity.text());
             if (quantity > 1) {
@@ -120,28 +149,30 @@
 
         // Remove item button click event
         $(document).on('click', '.remove', function() {
-// ///////////////////
-var cart = $("#cart_ani");
-    var cartTotal = cart.attr("data-totalitems");
-    
-    // Decrease the total items count
-    var newCartTotal = parseInt(cartTotal) - 1;
-    
-    cart.attr("data-totalitems", newCartTotal);
-
 
             $(this).closest('li').remove();
+             // ///////////////////////////////////////////////////
+             var button = $(this);
+    var cart = $("#cart_ani");
+    var cartTotal = cart.attr("data-totalitems");
+    var newCartTotal = parseInt(cartTotal) - 1;
+
+    button.addClass("sendtocart");
+    setTimeout(function () {
+      button.removeClass("sendtocart");
+      cart.addClass("shake").attr("data-totalitems", newCartTotal);
+      setTimeout(function () {
+        cart.removeClass("shake");
+      }, 500);
+    }, 1000);
+            ////////////////////////////////////////////////////
             updateCartTotal();
             updateProceedPaymentButton();
-    
-    //  console.log(newCartTotal)
+            
         });
     });
-    // ///////////////////////////////////////////////////////////////////////////////////////
 
-    function pay() {
-        console.log("pay")
-    }
+
 </script>
 
 

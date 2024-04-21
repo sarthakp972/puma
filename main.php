@@ -52,6 +52,14 @@ $user_email = $_SESSION['user_email'];
    include 'new_.php';
    ?>
    </div>
+   <!-- ///////////////////////////////////////////// -->
+   
+<div id="check_out">
+   <?php
+   include 'check_out.php';
+   ?>
+   </div>
+   <!-- ////////////////////////////////////////// -->
    <div id="running">
    <?php
    include 'running.php';
@@ -103,6 +111,7 @@ $user_email = $_SESSION['user_email'];
    include 'batminton.php';
    ?>
    </div>
+
   <!--  -->
   </div>
    <!--  -->
@@ -117,7 +126,7 @@ $user_email = $_SESSION['user_email'];
    $("#walking").hide();
    $("#cricket").hide();
    $("#traning_gym").hide();
-
+   $("#check_out").hide();
    function cart(){
       $("#running").hide();
    $("#shopping_cart").show();
@@ -127,6 +136,7 @@ $user_email = $_SESSION['user_email'];
    $("#cricket").hide();
    $("#traning_gym").hide();
    $("#new_").hide();
+   $("#check_out").hide();
   }
   function Running(){
    $("#running").show();
@@ -137,6 +147,7 @@ $user_email = $_SESSION['user_email'];
    $("#cricket").hide();
    $("#traning_gym").hide();
    $("#new_").hide();
+   $("#check_out").hide();
   } 
 
   function walking() {
@@ -148,6 +159,7 @@ $user_email = $_SESSION['user_email'];
    $("#cricket").hide();
    $("#traning_gym").hide();
    $("#new_").hide();
+   $("#check_out").hide();
    
   }
   function training() {
@@ -159,6 +171,7 @@ $user_email = $_SESSION['user_email'];
    $("#cricket").hide();
    $("#traning_gym").show();
    $("#new_").hide();
+   $("#check_out").hide();
    
 }
 function Cricket() {
@@ -170,6 +183,7 @@ function Cricket() {
    $("#cricket").show();
    $("#traning_gym").hide();
    $("#new_").hide();
+   $("#check_out").hide();
    
 }
 function football() {
@@ -191,6 +205,7 @@ function Batminton() {
    $("#cricket").hide();
    $("#traning_gym").hide();
    $("#new_").hide();
+   $("#check_out").hide();
 }
 function new_(){
    $("#running").hide();
@@ -201,8 +216,24 @@ function new_(){
    $("#cricket").hide();
    $("#traning_gym").hide();
    $("#basketball").hide();
+ 
+   $("#check_out").hide();
 }
 
+   function pay() {
+      $("#running").hide();
+   $("#shopping_cart").hide();
+  $("#new_").hide();
+   $("#football").hide();
+   $("#walking").hide();
+   $("#cricket").hide();
+   $("#traning_gym").hide();
+   $("#basketball").hide();
+
+   $("#check_out").show();
+  
+   
+}
 </script>   
 
      
