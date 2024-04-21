@@ -28,6 +28,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }.af_nav_run{
 background: linear-gradient(45deg, #6A5ACD, #CD5C5C, #DB7093);}
+
     </style>
 </head>
 <body>
@@ -43,27 +44,24 @@ background: linear-gradient(45deg, #6A5ACD, #CD5C5C, #DB7093);}
 </div>  
 
 <!-- ///////////////////////////////////////////////////// -->
-<div class="mt-4 d-flex justify-content-around align-items-center">
-<div class="card" style="width: 18rem;">
-  <img src="https://cdn.sanity.io/images/qa41whrn/staging/b5e75f5263f6c02c4d18f277d3768276b325a900-1240x1754.jpg" class="card-img-top" alt="...">
+<div class="mt-4 d-flex flex-wrap justify-content-around align-items-center">
+    <div class="card mb-4" style="max-width: 18rem;">
+        <img src="https://cdn.sanity.io/images/qa41whrn/staging/b5e75f5263f6c02c4d18f277d3768276b325a900-1240x1754.jpg" class="card-img-top running_top_img" alt="...">
+    </div>
 
+    <div class="card mb-4" style="max-width: 18rem;">
+        <img src="https://cdn.sanity.io/images/qa41whrn/staging/d37897a0cc3842268239d4f386f3055e81d7aaa7-595x842.jpg" class="card-img-top running_top_img" alt="...">
+    </div>
+
+    <div class="card mb-4" style="max-width: 18rem;">
+        <img src="https://cdn.sanity.io/images/qa41whrn/staging/6903c322e781dbd0f47b441408023e15844c1108-595x842.jpg" class="card-img-top running_top_img" alt="...">
+    </div>
+
+    <div class="card mb-4" style="max-width: 18rem;">
+        <img src="https://cdn.sanity.io/images/qa41whrn/staging/011f8c7435d680e6f1c08b654401ce00cc85e006-595x842.jpg" class="card-img-top running_top_img" alt="...">
+    </div>
 </div>
 
-<div class="card" style="width: 18rem;">
-  <img src="https://cdn.sanity.io/images/qa41whrn/staging/d37897a0cc3842268239d4f386f3055e81d7aaa7-595x842.jpg" class="card-img-top" alt="...">
-
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img src="https://cdn.sanity.io/images/qa41whrn/staging/6903c322e781dbd0f47b441408023e15844c1108-595x842.jpg" class="card-img-top" alt="...">
-
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img src="https://cdn.sanity.io/images/qa41whrn/staging/011f8c7435d680e6f1c08b654401ce00cc85e006-595x842.jpg" class="card-img-top" alt="...">
-
-</div>
-</div>
 <!-- ////////////////////////////////////////////////////////// -->
 <div class="m-4">
 <div class="banner_1"></div>

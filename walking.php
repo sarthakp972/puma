@@ -29,6 +29,14 @@
 .af_n_walk{
     background: linear-gradient(45deg, #FFD700, #9370DB, #8FBC8F);
 }
+.card-img-top-walk{
+  
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    
+
+}
     </style>
 </head>
 <body>
@@ -46,22 +54,22 @@
 <!-- ///////////////////////////////////////////////////// -->
 <div class="mt-4 d-flex justify-content-around align-items-center">
 <div class="card" style="width: 18rem;">
-  <img src="https://cdn.sanity.io/images/qa41whrn/staging/b5e75f5263f6c02c4d18f277d3768276b325a900-1240x1754.jpg" class="card-img-top" alt="...">
+  <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_715,c_limit/ba78838a-da57-4104-b276-65e2dd30a034/nike-just-do-it.png" class="card-img-top-walk" alt="...">
 
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="https://cdn.sanity.io/images/qa41whrn/staging/d37897a0cc3842268239d4f386f3055e81d7aaa7-595x842.jpg" class="card-img-top" alt="...">
+  <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_715,c_limit/8d075d17-3826-497a-a682-08edb1b04579/nike-just-do-it.png" class="card-img-top-walk" alt="...">
 
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="https://cdn.sanity.io/images/qa41whrn/staging/6903c322e781dbd0f47b441408023e15844c1108-595x842.jpg" class="card-img-top" alt="...">
+  <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_715,c_limit/91f5147f-4008-4b88-87c4-ce17e7c5237e/nike-just-do-it.png" class="card-img-top-walk" alt="...">
 
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="https://cdn.sanity.io/images/qa41whrn/staging/011f8c7435d680e6f1c08b654401ce00cc85e006-595x842.jpg" class="card-img-top" alt="...">
+  <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_715,c_limit/c54ad905-3531-4522-9f40-7991d7b71ab0/nike-just-do-it.png" class="card-img-top-walk" alt="...">
 
 </div>
 </div>

@@ -17,16 +17,20 @@
 </head>
 
 <?php
-  include 'navbar.php';
+  include 'navbar2.php';
    ?> 
 
-    
+    <div class="pls" onclick="pls_login()">
 <?php
     include 'front_c_img.php';
    ?> 
+   </div>
+
+   <div class="pls" onclick="pls_login()">
    <?php
   include 'fresh_front.php';
    ?> 
+     </div>
    <?php
     include 'front_c_after.php';
    ?> 

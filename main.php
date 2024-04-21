@@ -1,3 +1,16 @@
+<?php
+session_start(); // Start the session
+
+
+
+// Retrieve user data from session
+$user_id = $_SESSION['user_id'];
+$user_email = $_SESSION['user_email'];
+
+// You can use this data to display on the page
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,11 +43,15 @@
 <html>
 <body>
 
-
  <?php
    include 'navbar.php';
    ?> 
 <!--  -->
+<div id="new_">
+   <?php
+   include 'new_.php';
+   ?>
+   </div>
    <div id="running">
    <?php
    include 'running.php';
@@ -93,6 +110,7 @@
 
 <script>
    $("#running").show();
+   $("#new_").hide();
    $("#basketball").hide();
    $("#football").hide();
    $("#shopping_cart").hide();
@@ -108,6 +126,7 @@
    $("#walking").hide();
    $("#cricket").hide();
    $("#traning_gym").hide();
+   $("#new_").hide();
   }
   function Running(){
    $("#running").show();
@@ -117,6 +136,7 @@
    $("#walking").hide();
    $("#cricket").hide();
    $("#traning_gym").hide();
+   $("#new_").hide();
   } 
 
   function walking() {
@@ -127,6 +147,7 @@
    $("#walking").show();
    $("#cricket").hide();
    $("#traning_gym").hide();
+   $("#new_").hide();
    
   }
   function training() {
@@ -137,6 +158,7 @@
    $("#walking").hide();
    $("#cricket").hide();
    $("#traning_gym").show();
+   $("#new_").hide();
    
 }
 function Cricket() {
@@ -147,6 +169,7 @@ function Cricket() {
    $("#walking").hide();
    $("#cricket").show();
    $("#traning_gym").hide();
+   $("#new_").hide();
    
 }
 function football() {
@@ -157,7 +180,7 @@ function football() {
    $("#walking").hide();
    $("#cricket").hide();
    $("#traning_gym").hide();
-   
+   $("#new_").hide();
 }
 function Batminton() {
    $("#running").hide();
@@ -167,11 +190,21 @@ function Batminton() {
    $("#walking").hide();
    $("#cricket").hide();
    $("#traning_gym").hide();
+   $("#new_").hide();
 }
-
+function new_(){
+   $("#running").hide();
+   $("#shopping_cart").hide();
+  $("#new_").show();
+   $("#football").hide();
+   $("#walking").hide();
+   $("#cricket").hide();
+   $("#traning_gym").hide();
+   $("#basketball").hide();
+}
 
 </script>   
 
-      
+     
 </body>
 </html>

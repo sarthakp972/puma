@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         .card1 {
+         .cardx1 {
             margin-right: 60px; /* Adjust this value to set the desired gap */
             
         }
@@ -35,7 +35,7 @@
   
     <div class="container d-flex flex-row justify-content-between scroll">
         
-        <div class="card1">
+        <div class="card1" onclick="pls_login()">
     <div class="card" style="width: 12rem;">
   <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/379221/01/sv01/fnd/IND/fmt/png/MB.03-Blue-Hive-Unisex-Basketball-Shoes" class="card-img-top" alt="..."> 
 
@@ -48,7 +48,7 @@
  </div>
 <!--  -->
 
- <div class="card1">
+ <div class="card1" onclick="pls_login()">
     <div class="card" style="width: 12rem;">
   <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/391928/01/sv01/fnd/IND/fmt/png/RS-X-Triple-Unisex-Sneakers" class="card-img-top" alt="..."> 
 
@@ -63,7 +63,7 @@
     </div>
  </div>
  <!--  -->
- <div class="card1">
+ <div class="card1" onclick="pls_login()">
     <div class="card" style="width: 12rem;">
   <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/377838/01/sv01/fnd/IND/fmt/png/Voyage-NITRO-3-GORE-TEX-Men's-Trail-Running-Shoes" class="card-img-top" alt="..."> 
 
@@ -75,7 +75,7 @@
     </div>
  </div>
  <!--  -->
- <div class="card1">
+ <div class="card1" onclick="pls_login()">
     <div class="card" style="width: 12rem;">
   <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/379438/06/sv01/fnd/IND/fmt/png/Conduct-Pro-Unisex-Running-Shoes" class="card-img-top" alt="..."> 
 
@@ -89,7 +89,7 @@
  <!-- 
 
   -->
-  <div class="card1">
+  <div class="card1" onclick="pls_login()">
     <div class="card" style="width: 12rem;">
  <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/107711/01/sv01/fnd/IND/fmt/png/FUTURE-7-MATCH-FG/AG-Men's-Laceless-Football-Boots" class="card-img-top" alt="..."> 
 
@@ -101,12 +101,12 @@
     </div>
  </div>
  <!--  -->
- <div class="card1">
+ <div class="card1" onclick="pls_login()">
     <div class="card" style="width: 12rem;">
   <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/396464/02/sv01/fnd/IND/fmt/png/Palermo-Lth-Unisex-Sneakers" class="card-img-top" alt="..."> 
 
   <div class="d-flex flex-row justify-content-between container">
-    <h5 class="card-title">RS-X Triple UNisex</h5>
+    <h5 class="card-title">RS-X Triple UNisey</h5>
     <p>$500</p>
     </div>
 

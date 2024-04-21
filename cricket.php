@@ -11,8 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
     <style>
-        .banner_1{
-            background-image: url('https://cdn.sanity.io/images/qa41whrn/prod/4ecbad22c10850a48dc6591f755c85733a9ba58e-2000x694.jpg?w=1440&q=80&auto=format');
+        .banner_1_cri{
+            background-image: url('https://cdn.sanity.io/images/qa41whrn/prod/5142da34333160f19fe3251a5eff535be2fb67f6-2880x1040.jpg?w=2160&q=80&auto=format');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -31,6 +31,11 @@
 .af_na_cri{
     background: linear-gradient(45deg, #20B2AA, #FF6F61, #EEE8AA);
 }
+.card-img-top-cricket{
+  width: 100%;
+        height: 500px;
+        object-fit: cover;
+}
     </style>
 </head>
 <body>
@@ -48,35 +53,35 @@
 <!-- ///////////////////////////////////////////////////// -->
 <div class="mt-4 d-flex justify-content-around align-items-center">
 <div class="card" style="width: 18rem;">
-  <img src="https://cdn.sanity.io/images/qa41whrn/staging/b5e75f5263f6c02c4d18f277d3768276b325a900-1240x1754.jpg" class="card-img-top" alt="...">
+  <img src="https://cdn.sanity.io/images/qa41whrn/prod/dbae8850e093d6b61ca2db9f14d07597ef1660f3-1536x1536.jpg?w=2160&q=80&auto=format" class="card-img-top-cricket" alt="...">
 
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="https://cdn.sanity.io/images/qa41whrn/staging/d37897a0cc3842268239d4f386f3055e81d7aaa7-595x842.jpg" class="card-img-top" alt="...">
+  <img src="https://cdn.sanity.io/images/qa41whrn/prod/4c6bb733dc5f25deb99c5a4789b588e5371fca5a-3200x3200.jpg?w=2160&q=80&auto=format" class="card-img-top-cricket" alt="...">
 
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="https://cdn.sanity.io/images/qa41whrn/staging/6903c322e781dbd0f47b441408023e15844c1108-595x842.jpg" class="card-img-top" alt="...">
+  <img src="https://cdn.sanity.io/images/qa41whrn/prod/f7f7c5eebccec6aba4a60cd613df703c59c5554b-1536x1536.jpg?w=2160&q=80&auto=format" class="card-img-top-cricket" alt="...">
 
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="https://cdn.sanity.io/images/qa41whrn/staging/011f8c7435d680e6f1c08b654401ce00cc85e006-595x842.jpg" class="card-img-top" alt="...">
+  <img src="https://cdn.sanity.io/images/qa41whrn/prod/dbae8850e093d6b61ca2db9f14d07597ef1660f3-1536x1536.jpg?w=2160&q=80&auto=format" class="card-img-top-cricket" alt="...">
 
 </div>
 </div>
 <!-- ////////////////////////////////////////////////////////// -->
-<div class="banner_1 m-4 flex justify-content-start align-items-center ">
+<div class="banner_1_cri m-4 flex justify-content-center align-items-center ">
     <div class="m-4">
 
  <div class="flex justify-content-start align-items-center" >
-    <h1>
+    <h1 class="text-dark">
  EXTRA 20% OFF
 ON EVERYTHING*
 </h1>
-<p>
+<p class="text-dark">
 Auto-applied at checkout
 </p>
  </div>

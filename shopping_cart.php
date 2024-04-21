@@ -26,7 +26,7 @@
             <div class="text-center mt-3">
               <p>Total Items: <span id="total-items">0</span></p>
               <p>Total Price: $<span id="total-price">0.00</span></p>
-              <button class="btn btn-success proceed-payment d-none">Proceed to Payment</button>
+              <button class="btn btn-success proceed-payment d-none" onclick="pay()">Proceed to Payment</button>
             </div>
           </div>
         </div>
@@ -137,6 +137,11 @@ var cart = $("#cart_ani");
     //  console.log(newCartTotal)
         });
     });
+    // ///////////////////////////////////////////////////////////////////////////////////////
+
+    function pay() {
+        console.log("pay")
+    }
 </script>
 
 

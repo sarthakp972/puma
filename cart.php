@@ -16,6 +16,8 @@
         
 
  <div class="m-2">
+
+
   <div class="card1">
     <div class="card" style="width: 15rem;">
   <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/391928/01/sv01/fnd/IND/fmt/png/RS-X-Triple-Unisex-Sneakers" class="card-img-top" alt="1"> 
@@ -27,7 +29,7 @@
     <div  class="d-flex flex-row container justify-content-between ">
 
     <div class="page-wrapper">
-        <button  class="btn btn-dark mb-4 add-to-cart" id="addtocart" data-name="RS-X Triple UNisex" data-price="50">Go Add to card  <span class="cart-item"></span></button>
+        <button  class="btn btn-dark mb-4 add-to-cart addtocart_ani"    data-name="RS-X Triple UNisex" data-price="50">Go Add to card  <span class="cart-item"></span></button>
         </div>
 
         <h5 class="text-danger-1 ">50% off</h5>
@@ -46,8 +48,13 @@
     <p>$49</p>
     </div>
     <div  class="d-flex flex-row container justify-content-between ">
-        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Air Max 90" data-price="49">Go Add to card</button>
+
+          <div class="page-wrapper">
+        <button  class="btn btn-dark mb-4 add-to-cart"   data-name="Air Max 90" data-price="49"  >Go Add to card  <span class="cart-item"></span></button>
+        </div>
+
         <h5 class="text-danger-1 ">49% off</h5>
+
             </div>
     </div>
  </div></div>
@@ -65,7 +72,11 @@
     <p>$43</p>
     </div>
     <div  class="d-flex flex-row container justify-content-between ">
-        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Chuck Taylor All Star" data-price="43">Go Add to card</button>
+
+    <div class="page-wrapper">
+        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Chuck Taylor All Star" data-price="43">Go Add to card <span class="cart-item"></span></button>
+        </div>
+
         <h5 class="text-danger-1 ">39% off</h5>
             </div>
     </div>
@@ -81,7 +92,9 @@
     <p>$20</p>
     </div>
     <div  class="d-flex flex-row container justify-content-between ">
-        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Stan Smith" data-price="20">Go Add to card</button>
+    <div class="page-wrapper">
+        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Stan Smith" data-price="20">Go Add to card <span class="cart-item"></span></button>
+        </div>
         <h5 class="text-danger-1 ">50% off</h5>
             </div>
     </div>
@@ -97,7 +110,9 @@
     <p>$20.99</p>
     </div>
     <div  class="d-flex flex-row container justify-content-between ">
-        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="RS-X Triple UNisex-2" data-price="20.99">Go Add to card</button>
+    <div class="page-wrapper">
+        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="RS-X Triple UNisex-2" data-price="20.99">Go Add to card <span class="cart-item"></span></button>
+</div>
         <h5 class="text-danger-1 ">35% off</h5>
             </div>
     </div>
@@ -124,7 +139,9 @@
     <p>$10.99</p>
     </div>
     <div  class="d-flex flex-row container justify-content-between ">
-        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Superstar" data-price="10.99">Go Add to card</button>
+    <div class="page-wrapper">
+        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Superstar" data-price="10.99">Go Add to card <span class="cart-item"></span></button>
+</div>
         <h5 class="text-danger-1 ">60% off</h5>
             </div>
     </div>
@@ -140,7 +157,9 @@
     <p>$29.99</p>
     </div>
     <div  class="d-flex flex-row container justify-content-between ">
-        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Ultraboost" data-price="29.99">Go Add to card</button>
+    <div class="page-wrapper">
+        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Ultraboost" data-price="29.99">Go Add to card <span class="cart-item"></span></button>
+</div>
         <h5 class="text-danger-1 ">19% off</h5>
             </div>
     </div>
@@ -158,7 +177,9 @@
     <p>$60</p>
     </div>
     <div  class="d-flex flex-row container justify-content-between ">
-        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Air Force 1" data-price="60">Go Add to card</button>
+    <div class="page-wrapper">
+        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Air Force 1" data-price="60">Go Add to card <span class="cart-item"></span></button>
+</div>
         <h5 class="text-danger-1 ">17% off</h5>
             </div>
     </div>
@@ -174,7 +195,9 @@
     <p>$11.99</p>
     </div>
     <div  class="d-flex flex-row container justify-content-between ">
-        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Old Skool" data-price="11.99">Go Add to card</button>
+    <div class="page-wrapper">
+        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Old Skool" data-price="11.99">Go Add to card <span class="cart-item"></span></button>
+</div>
         <h5 class="text-danger-1 ">50% off</h5>
             </div>
     </div>
@@ -190,7 +213,9 @@
     <p>$20</p>
     </div>
     <div  class="d-flex flex-row container justify-content-between ">
-        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Cortez" data-price="20">Go Add to card</button>
+    <div class="page-wrapper">
+        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Cortez" data-price="20">Go Add to card <span class="cart-item"></span></button>
+</div>
         <h5 class="text-danger-1 ">47% off</h5>
             </div>
     </div>
@@ -217,7 +242,9 @@
     <p>$18</p>
     </div>
     <div  class="d-flex flex-row container justify-content-between ">
-        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Gazelle" data-price="18">Go Add to card</button>
+    <div class="page-wrapper">
+        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Gazelle" data-price="18">Go Add to card <span class="cart-item"></span></button>
+</div>
         <h5 class="text-danger-1 ">65% off</h5>
             </div>
     </div>
@@ -233,7 +260,9 @@
     <p>$99</p>
     </div>
     <div  class="d-flex flex-row container justify-content-between ">
-        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Yeezy Boost 350" data-price="99">Go Add to card</button>
+    <div class="page-wrapper">
+        <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Yeezy Boost 350" data-price="99">Go Add to card <span class="cart-item"></span></button>
+</div>
         <h5 class="text-danger-1 ">15% off</h5>
             </div>
     </div>
@@ -251,7 +280,9 @@
     <p>$85</p>
     </div>
     <div  class="d-flex flex-row container justify-content-between ">
+    <div class="page-wrapper">
         <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Continental 80" data-price="85">Go Add to card</button>
+</div>
         <h5 class="text-danger-1 ">17% off</h5>
             </div>
     </div>
@@ -267,7 +298,9 @@
     <p>$77</p>
     </div>
     <div  class="d-flex flex-row container justify-content-between ">
+    <div class="page-wrapper">
         <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Product 1" data-price="77">Go Add to card</button>
+</div>
         <h5 class="text-danger-1 ">14% off</h5>
             </div>
     </div>
@@ -283,7 +316,9 @@
     <p>$81</p>
     </div>
     <div  class="d-flex flex-row container justify-content-between ">
+    <div class="page-wrapper">
         <button  class="btn btn-dark mb-4 add-to-cart"  data-name="Air Jordan 1" data-price="81">Go Add to card</button>
+</div>
         <h5 class="text-danger-1 ">14% off</h5>
             </div>
     </div>
@@ -504,25 +539,6 @@
   }, 2000); // Change color every 2 seconds
 </script>
 
-<script>
-        $(document).ready(function () {
-  $("#addtocart").on("click", function () {
-    var button = $(this);
-    var cart = $("#cart");
-    var cartTotal = cart.attr("data-totalitems");
-    var newCartTotal = parseInt(cartTotal) + 1;
 
-    button.addClass("sendtocart");
-    setTimeout(function () {
-      button.removeClass("sendtocart");
-      cart.addClass("shake").attr("data-totalitems", newCartTotal);
-      setTimeout(function () {
-        cart.removeClass("shake");
-      }, 500);
-    }, 1000);
-  });
-});
-
-      </script> 
      </body>
      </html>
