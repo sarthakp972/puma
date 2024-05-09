@@ -303,7 +303,7 @@ background-color:rgba(90, 82, 36);
 <div class="container">
     <div class="profile-card">
         <img src="img\profile-pic.png" alt="Profile Picture" class="profile-img">
-        <h2 class="text-light"> Email: <?php echo $user_email; ?></h2>
+        <h2 class="text-light"> Profile Name: <?php echo $user_name; ?></h2>
 
         <div class="d-flex flex-column" >
         <button class="btn btn-secondary mb-2" id="orderBtn">Your Order</button>

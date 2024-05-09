@@ -32,7 +32,9 @@
         <div class="col-md-4">
             <h2>Shopping Cart</h2>
             <ul class="list-group cart container">
-                <!-- Cart items will be inserted here -->
+              
+                <!--  Cart items inserted another page  -->
+                  <!-- Cart items will be inserted here -->
             </ul>
             <div class="text-center mt-3">
                 <button class="btn btn-danger clear-cart">Clear Cart</button>
@@ -64,7 +66,7 @@
     function addItemToCart(name, price, quantity) {
         var cartItem = '<li class="list-group-item d-flex justify-content-between align-items-center">' +
             name +
-            '<span class="badge badge-primary badge-pill price">' + price.toFixed(2) + '</span>' +
+            '<span class="badge badge-primary badge-pill price">' + price.toFixed(2) + '</span>' + 
             '<div class="btn-group">' +
             '<button class="btn btn-sm btn-outline-primary increment">+</button>' +
             '<span class="quantity">' + quantity + '</span>' +
@@ -173,6 +175,69 @@
     });
 
 
+// ///////////////////////////////////////////////////////////////////cart send into database
+
+
+
+// Function to send cart data to PHP using AJAX
+function sendCartDataToPHP(cartData) {
+  
+    console.log(cartData);
+        $.ajax({
+           
+            type: "POST",
+            url: "cart_database.php", 
+            data: { cartData: JSON.stringify(cartData) }, // Send serialized cart data to PHP
+            success: function(response) {
+                // Handle success response from PHP if needed
+                console.log(response,"this response");
+                // Redirect to payment page or show confirmation message
+                // window.location.href = "payment.php"; // Replace "payment.php" with your payment page URL
+                alert("data send",response);
+            },
+            error: function(xhr, status, error) {
+                // Handle error response if needed
+                console.error(xhr.responseText);
+                // Show error message to the user
+                alert("Error occurred while processing payment. Please try again later.");
+            }
+        });
+    }
+    ////////////////////////////////////////////////////////////
+  
+    
+    ////////////////////////////////////////////////////////////////////
+    $(document).ready(function() {
+        // Proceed to payment button click event
+        $('.proceed-payment').click(function() {
+            // Serialize cart data
+            var cartData = [];
+            $('.cart .list-group-item').each(function() {
+                var item = {
+                    name: $(this).text().trim().split("+")[0].split("-")[0].split("$")[0],
+                    price: parseFloat($(this).find('.price').text()),
+                    quantity: parseInt($(this).find('.quantity').text())
+                };
+                cartData.push(item);
+            });  
+
+            // Send cart data to PHP when proceeding to payment
+             sendCartDataToPHP(cartData);
+            // console.log(JSON.stringify(cartData));
+        });
+
+        // Other event handlers...
+    });
+    ////////////////////////////////////////////////////////////////////////////////
+    // $(document).ready(function() {
+    //     // Proceed to payment button click event
+    //     $('.proceed-payment').click(function() {
+    //         // Serialize cart data
+           
+    //     });
+
+        // Other event handlers...
+   // });
 </script>
 
 

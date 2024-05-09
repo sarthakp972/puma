@@ -6,6 +6,7 @@ session_start(); // Start the session
 // Retrieve user data from session
 $user_id = $_SESSION['user_id'];
 $user_email = $_SESSION['user_email'];
+$user_name = $_SESSION['user_f_name'] ;
 
 // You can use this data to display on the page
 ?>
